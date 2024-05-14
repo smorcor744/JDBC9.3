@@ -1,7 +1,8 @@
 
 class ProductDAO {
-    private val dataSource: DataSource = DataSource
+    private val dataSource = DataSource.getDS(DataSource.DataSourceType.HIKARI)
     private val console: IOutPutInfo = Console()
+
     fun createProduct(product: Product) {
         UserDAOH2(dataSource, console).create(product)
     }

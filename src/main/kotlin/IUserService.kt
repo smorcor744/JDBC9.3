@@ -1,4 +1,3 @@
-import java.util.*
 
 interface IUserService {
     fun create(user: Product): Product?
