@@ -1,4 +1,3 @@
-import javax.sql.DataSource
 
 class ProductDAO {
     private val dataSource: DataSource = DataSource

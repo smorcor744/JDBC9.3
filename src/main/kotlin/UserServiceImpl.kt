@@ -5,7 +5,7 @@ class UserServiceImpl(private val userDao: IUserDAO) : IUserService {
         return userDao.create(user)
     }
 
-    override fun getById(id: UUID): Product? {
+    override fun getById(id: Int): Product? {
         return userDao.getById(id)
     }
 
@@ -13,7 +13,7 @@ class UserServiceImpl(private val userDao: IUserDAO) : IUserService {
         return userDao.update(user)
     }
 
-    override fun delete(id: UUID): Boolean {
+    override fun delete(id: Int): Boolean {
         return userDao.delete(id)
     }
 
